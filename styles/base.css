@@ -23,9 +23,9 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
     font-weight: bold;
 }
 
