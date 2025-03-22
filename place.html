@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Ejiro Ijabor">
+      <meta name="description" content="Explore Nigeria with this personally designed webpage. Featuring stunning hero images, local weather details. this page showcases landmarks, and climate of Nigeria.">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="styles/weather.css">
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>NIGERIA</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/large.webp" media="(min-width: 768px)">
+                <source srcset="images/small.webp" media="(max-width: 767px)" width="170" height="180">
+                <img src="images/hero.webp" alt="Country Hero Image" width="400" height="250">
+            </picture>
+        </section>
+
+    
+
+<section class="content">
+    <div class="text">
+        <h3>About My Country</h3>
+        <p>Nigeria, located in West Africa, is the most populous country on the continent. It has a rich history that dates back thousands of years, with evidence of early civilizations such as the Nok culture (around 1000 BC). The region later saw powerful kingdoms and empires like the Benin Empire, Oyo Empire, and Kanem-Bornu Empire. In the 19th century, British colonization led to the creation of modern Nigeria, which gained independence on October 1, 1960.<tag>
+          <!--Tab to edit-->
+        </tag></p>
+    </div>
+
+    <div class="separator"></div> <!-- Separator Line -->
+
+    <div class="attractions">
+        <h3>Nigerian Attractions</h3>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/zuma-rock.jpg" alt="Zuma Rock">
+                <p>Zuma Rock, Abuja</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/olumo-rock.jpg" alt="Olumo Rock">
+                <p>Olumo Rock, Ogun State</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/erin-ijesha.jpg" alt="Erin Ijesha Waterfalls">
+                <p>Erin Ijesha Waterfalls, Osun State</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/yankari.jpg" alt="Yankari National Park">
+                <p>Yankari National Park, Bauchi State</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <section id="weather">
+    <h2>Current Weather</h2>
+    <img id="weather-icon" src="images/weather.svg" alt="Weather Icon">
+    <p id="weather-info"></p>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
