@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root {
   --primary-green: #008751;
   --secondary-white: #ffffff;
@@ -6,7 +9,8 @@
 body {
   background-color: var(--secondary-white);
   color: var(--primary-green);
-  font-family: Arial, sans-serif;
+  font-family: ' PT Serif ', sans-serif;
+  font-style: italic ;
   text-align: center;
 }
 
