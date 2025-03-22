@@ -1,0 +1,151 @@
+:root {
+  --primary-green: #008751;  /* Nigeria Flag Green */
+  --secondary-white: #ffffff; /* Nigeria Flag White */
+}
+
+body {
+  background-color: var(--secondary-white);
+  color: var(--primary-green);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Green-White-Green header */
+header {
+  background: linear-gradient(to right, var(--primary-green) 33%, var(--secondary-white) 34%, var(--secondary-white) 66%, var(--primary-green) 67%);
+  color: var(--secondary-white);
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styling the Hero Section */
+.hero {
+  background-color: var(--primary-green);
+  color: var(--secondary-white);
+  padding: 50px;
+  font-size: 28px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-green);
+  color: var(--secondary-white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-white);
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+}
+
+/* Footer with Green-White-Green effect */
+footer {
+  background: linear-gradient(to right, var(--primary-green) 33%, var(--secondary-white) 34%, var(--secondary-white) 66%, var(--primary-green) 67%);
+  color: var(--primary-green);
+  padding: 15px;
+  font-size: 16px;
+  box-shadow:0 0 10px black;
+  text-shadow:  
+        -0.5px -0.5px 0 black,  
+        0.5px -0.5px 0 black,  
+        -0.5px 0.5px 0 black,  
+        0.5px 0.5px 0 black;
+}
+
+
+
+#weather {
+    background: #ffffff;
+    padding: 15px;
+    margin: 20px auto;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#weather-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+
+#last-modified {
+    font-size: 0.9rem;
+    color: var(--primary-green);
+}
+
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid slategrey ;
+    gap:20px ;
+}
+
+.text {
+    width: 50%; /* Adjust text width */
+}
+
+.attractions {
+    width: 0%; /* Adjust to fit the right side */
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 350px;
+    margin-left: auto; /* Pushes grid to the right */
+}
+
+.grid-item img {
+    width: 80px;
+    height: 75px;
+    border-radius: 8px;
+}
+
+.grid-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+h1{
+  color: var(--primary-green);
+  text-shadow:  
+    -2px -2px 0 black,  
+    2px -2px 0 black,  
+    -2px 2px 0 black,  
+    2px 2px 0 black;
+}
+
+
+
+@media (max-width: 768px) { 
+    .content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center content */
+    }
+
+    .text, .attractions {
+        width: 100%; /* Full width for stacking */
+        text-align: center;
+    }
+}
