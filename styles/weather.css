@@ -1,6 +1,6 @@
 :root {
-  --primary-green: #008751;  /* Nigeria Flag Green */
-  --secondary-white: #ffffff; /* Nigeria Flag White */
+  --primary-green: #008751;
+  --secondary-white: #ffffff;
 }
 
 body {
@@ -19,7 +19,6 @@ header {
   font-weight: bold;
 }
 
-/* Styling the Hero Section */
 .hero {
   background-color: var(--primary-green);
   color: var(--secondary-white);
@@ -27,7 +26,7 @@ header {
   font-size: 28px;
 }
 
-/* Buttons */
+
 button {
   background-color: var(--primary-green);
   color: var(--secondary-white);
@@ -44,7 +43,7 @@ button:hover {
   border: 2px solid var(--primary-green);
 }
 
-/* Footer with Green-White-Green effect */
+
 footer {
   background: linear-gradient(to right, var(--primary-green) 33%, var(--secondary-white) 34%, var(--secondary-white) 66%, var(--primary-green) 67%);
   color: var(--primary-green);
@@ -97,11 +96,11 @@ footer {
 }
 
 .text {
-    width: 50%; /* Adjust text width */
+    width: 50%; 
 }
 
 .attractions {
-    width: 0%; /* Adjust to fit the right side */
+    width: 0%; 
     text-align: center;
 }
 
@@ -110,7 +109,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 350px;
-    margin-left: auto; /* Pushes grid to the right */
+    margin-left: auto;
 }
 
 .grid-item img {
@@ -140,12 +139,12 @@ h1{
 
 @media (max-width: 768px) { 
     .content {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center content */
+        flex-direction: column;
+        align-items: center; 
     }
 
     .text, .attractions {
-        width: 100%; /* Full width for stacking */
+        width: 100%;
         text-align: center;
     }
 }
