@@ -7,7 +7,7 @@
 body {
   background-color: var(--secondary-white);
   color: var(--primary-green);
-  font-family: ' PT Serif ', sans-serif;
+  font-family: 'PT Serif', serif;
   font-style: italic ;
   text-align: center;
 }
@@ -101,7 +101,7 @@ footer {
 }
 
 .attractions {
-    width: 0%; 
+    width: 50%; 
     text-align: center;
 }
 
