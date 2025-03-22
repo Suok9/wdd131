@@ -10,7 +10,6 @@ body {
   text-align: center;
 }
 
-/* Green-White-Green header */
 header {
   background: linear-gradient(to right, var(--primary-green) 33%, var(--secondary-white) 34%, var(--secondary-white) 66%, var(--primary-green) 67%);
   color: var(--secondary-white);
