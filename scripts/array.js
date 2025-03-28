@@ -57,26 +57,30 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
  {
-   templeName: "Portland Oregon",
-   location: "Lake Oswego, Oregon, United States",
-   dedicated: "1989, August, 19",
-   area: 80500,
-   imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-        },
-{
+    templeName: "Bern Switzerland Temple",
+    location: "Bern, Switzerland",
+    dedicated: "1953, august, 5",
+    area: 35546,
+    imageUrl:
 
- templeName: "Provo City Center",
- location: "Provo, Utah, United States",
- dedicated: "2016, March, 20",
- area: 85084,
- imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-        },
+"https://churchofjesuschristtemples.org/bern-switzerland-temple/photographs/"  
+  },
   {
-    templeName: "Seattle Washington",
-     location: "Bellevue, Washington, United States",
-     dedicated: "1980, November, 17",
-     area: 110000,
-     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    templeName: "Porto Alegre Temple",
+    location: "Porto Alegre, Brazil",
+    dedicated: "1998, May, 2",
+    area: 10700,
+    imageUrl:
+ "https://churchofjesuschristtemples.org/porto-alegre-brazil-temple/photographs/"
+    },
+  {
+    templeName: "Campinas Brazil Temple",
+    location: "Campinas, Brazil",
+    dedicated: "1998, May, 1",
+    area: 48100,
+    imageUrl:
+ "https://churchofjesuschristtemples.org/campinas-brazil-temple/photographs/"
+
   }
 ];
 
