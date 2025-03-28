@@ -113,4 +113,22 @@ footer {
     .temple-card {
         width: 30%;
     }
+ 
+    nav ul {
+        display: flex;
+        position: static;
+        background: none;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 10px 15px;
+    }
+
+    #menu-toggle {
+        display: none; 
+    }
+
+ 
 }
