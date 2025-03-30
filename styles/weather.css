@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 :root {
   --primary-green: #008751;
@@ -8,6 +9,7 @@ body {
   background-color: var(--secondary-white);
   color: var(--primary-green);
   text-align: center;
+  font-family: "Abril Fatface", serif ;
 }
 
 header {
