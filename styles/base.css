@@ -13,6 +13,7 @@ header {
     background-color: #003366;
     color: white;
     padding: 20px;
+    
 }
 
 nav ul {
@@ -20,10 +21,12 @@ nav ul {
     justify-content: center;
     list-style-type: none;
     padding: 0;
+     
 }
 
 nav ul li {
     margin: 0 15px;
+    
 }
 
 nav ul li a {
@@ -31,12 +34,14 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Big Shoulders Stencil', sans-serif;
+    
 }
 
 /* Hover effect for navigation links */
 nav ul li a:hover {
     color: #ffcc00; /* Changes color on hover */
     text-decoration: underline;
+    
 }
 
 .card {
