@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -114,6 +112,6 @@ footer {
 
 
 fieldset#rating-options label {
-  display: inline-block; /* Make each label appear in a row */
-  margin-right: 10px; /* Add some horizontal spacing between labels */
+  display: inline-block; 
+  margin-right: 10px; 
 }

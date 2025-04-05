@@ -6,7 +6,7 @@ const products = [
   { id: "product5", name:"Flashdrive"}
 ];
 
-// Populate product dropdown
+
 document.addEventListener("DOMContentLoaded", () => {
   const select = document.getElementById("productName");
   products.forEach(product => {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     select.appendChild(option);
   });
 
-  // Footer year and last modified
+  
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 });
