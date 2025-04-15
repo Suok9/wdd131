@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
 body {
   font-family: 'Edu AU VIC WA NT Arrows', sans-serif;
   background-color: cadetblue;
@@ -11,20 +11,35 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  width: 80%;
-  padding: 20px;
-  max-width: 1200px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Arial Black", sans-serif;
+  background-color: darkblue;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 10px blue
 }
 
+.container {
+   width: 80%;
+padding: 20px;
+max-width: 1200px;
+  
+}
 h1 {
   font-size: 36px;
   color: #fff;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
-/* Search bar styling */
+/* Search bar */
 #movie-search {
   width: 100%;
   max-width: 600px;
@@ -55,7 +70,7 @@ button:hover {
   background-color: #e67e22;
 }
 
-/* Results container */
+/* Results */
 .movie-results {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +79,7 @@ button:hover {
   font-weight: bolder;
 }
 
-/* Individual movie styling */
+/* Individual movie style */
 .movie {
   font-family: "Georgia", serif;
   background-color: beige;
@@ -81,14 +96,14 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Movie poster image */
+/* Movie poster */
 .movie img {
   width: 100%;
   height: 375px;
   object-fit: cover;
 }
 
-/* Title styling */
+/* Title style */
 .movie h3 {
   font-size: 18px;
   font-weight: bold;
@@ -109,11 +124,14 @@ button:hover {
   gap: 5px;
 }
 
-
+.logo {
+  width: 40px;
+  height: 40px;
+}
 
 #logo {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
@@ -121,53 +139,20 @@ button:hover {
   left: 10px;
   border: 2px solid white;
 }
-
-nav {
-  margin-top: 10px;
-}
-
 #nav-menu {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 60px;
-  right: 15px;
+  top: 80px;
+  right: 20px;
   padding: 10px;
   border-radius: 5px;
-  align-items : center;
+  align-items: center;
 }
 
 #nav-menu.active {
   display: flex;
 }
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  color: #FF3737;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#menu-toggle {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  right: 30px;
-  top: 15px;
-  z-index: 10;
-}
-
 
 @media (min-width: 768px) {
   #nav-menu {
@@ -182,26 +167,38 @@ nav ul li a {
   }
 }
 
-
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  font-family: "Arial Black", sans-serif;
-  background-color: darkblue;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 10px blue
+nav {
+  margin-top: 10px;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
-  footer {
+nav ul li a {
+  color: #FF3737;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 45px;
+  z-index: 10;
+}
+
+footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -221,37 +218,47 @@ nav ul li a {
 }
 
 .footer-socials img {
-  width: 50px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
+
 
 .search-history {
-  margin: 10px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; 
 }
 
-.search-history span {
-  background-color: #444;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.search-history h4 {
+  color: #ddd; 
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
-.search-history span:hover {
-  background-color: #666;
+
+.search-history-item {
+  display: inline-block; 
+  background-color: #555;
+  color: white; 
+  padding: 8px 15px; 
+  margin: 5px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 0.9em; 
+  transition: background-color 0.3s ease; 
 }
 
-/* Modal styles */
+.search-history-item:hover {
+  background-color: #777; 
+}
+
+
 .modal {
   display: none;
   position: fixed;
   z-index: 999;
   left: 0;
-  top: 0;
+  top: 55px;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -259,27 +266,24 @@ nav ul li a {
 }
 
 .modal-content {
-  background-color: #222;
+  background-color: beige;
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
-  color: white;
+  color: black;
   border-radius: 10px;
   position: relative;
+  font-family: "Georgia", serif;
 }
 
-.close {
-  color: #aaa;
+.close-button {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
+  right: 25px;
+  top: 40px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.close:hover {
-  color: white;
+  color: red;
 }

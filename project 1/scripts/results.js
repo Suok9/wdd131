@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const yearSpan = document.getElementById("year");
     const lastModifiedSpan = document.getElementById("lastModified");
     const resultsContainer = document.getElementById('searchResults');
-    const API_KEY = '262790dcf12cf40b2e9b7125fcefd041'; 
+    const API_KEY = '262790dcf12cf40b2e9b7125fcefd041';
 
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
     if (lastModifiedSpan) lastModifiedSpan.textContent = document.lastModified;
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             .modal-content {
                 background-color: beige;
-                margin: 15% auto; /* 15% from the top and centered */
+                margin: 15% auto; 
                 padding: 20px;
                 border: 1px solid #888;
                 width: 80%;

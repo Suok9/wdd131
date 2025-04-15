@@ -1,4 +1,4 @@
-/* General body styling */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
 body {
   font-family: 'Edu AU VIC WA NT Arrows', sans-serif;
   background-color: cadetblue;
@@ -9,38 +9,23 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  font-family: "Arial Black", sans-serif;
-  background-color: darkblue;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 10px blue
+  font-weight: bolder;
 }
 
 .container {
-   width: 80%;
-padding: 20px;
-max-width: 1200px;
-  
-}
-h1 {
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 20px; 
+  width: 80%;
+  padding: 20px;
+  max-width: 1200px;
 }
 
-/* Search bar styling */
+h1 {
+  font-size: 33px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 #movie-search {
   width: 100%;
   max-width: 600px;
@@ -71,7 +56,7 @@ button:hover {
   background-color: #e67e22;
 }
 
-/* Results container */
+/* Results */
 .movie-results {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +65,7 @@ button:hover {
   font-weight: bolder;
 }
 
-/* Individual movie styling */
+/* Individual movie */
 .movie {
   font-family: "Georgia", serif;
   background-color: beige;
@@ -97,14 +82,14 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Movie poster image */
+/* Movie posters */
 .movie img {
   width: 100%;
-  height: 375px;
+  height: 370px;
   object-fit: cover;
 }
 
-/* Title styling */
+/* Movie Titles  */
 .movie h3 {
   font-size: 18px;
   font-weight: bold;
@@ -122,37 +107,69 @@ button:hover {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
-}
+
 
 #logo {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
   top: 10px;
-  left: 10px;
-  border: 2px solid white;
+  left: 5px;
+  border: 1px solid white;
 }
+
+nav {
+  margin-top: 10px;
+}
+
 #nav-menu {
   display: none;
-  flex-direction: row;
+  flex-direction: column;
   position: absolute;
   top: 60px;
-  right: 15px;
+  right: 38px;
   padding: 10px;
   border-radius: 5px;
+  align-items : center;
+  
 }
 
 #nav-menu.active {
   display: flex;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #FF3737;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 45px;
+  top: 19px;
+  z-index: 10;
+}
+
 
 @media (min-width: 768px) {
   #nav-menu {
@@ -167,38 +184,37 @@ button:hover {
   }
 }
 
-nav {
-  margin-top: 10px;
-}
 
-nav ul {
-  list-style: none;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  font-family: "Arial Black", sans-serif;
+  background-color: darkblue;
+  z-index: 900;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 10px blue
 }
 
-nav ul li a {
-  color: #FF3737;
-  text-decoration: none;
-  font-weight: bold;
-}
 
-#menu-toggle {
-  display: none;
-}
-
-footer {
+  footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: darkgrey;
   padding: 1rem 0;
-
-  margin-top: 40px;
+  font-weight: bolder;
+  font-family:"Georgia", serif;
+  margin-top: 20px;
   align-items: center;
+   
 }
 
 .footer-socials ul {
@@ -209,39 +225,68 @@ footer {
 }
 
 .footer-socials img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 40px;
 }
 
-
-/* In your styles/series.css file */
-
-/* Styling for the search history container */
 .search-history {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center; /* Center the title and items */
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.search-history h4 {
-  color: #ddd; /* Light grey color for the title */
-  margin-bottom: 10px;
-  font-size: 1.1em;
+.search-history span {
+  background-color: #444;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Styling for individual search history items (spans) */
-.search-history-item {
-  display: inline-block; /* Allows them to sit next to each other */
-  background-color: #555; /* Dark grey background */
-  color: white; /* White text */
-  padding: 8px 15px; /* Add some padding inside the items */
-  margin: 5px; /* Add some spacing between items */
-  border-radius: 5px; /* Slightly rounded corners */
-  cursor: pointer; /* Change cursor to indicate they are clickable */
-  font-size: 0.9em; /* Slightly smaller font size */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+.search-history span:hover {
+  background-color: #666;
 }
 
-.search-history-item:hover {
-  background-color: #777; /* Slightly lighter grey on hover */
+/* Modal stylers */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
 }
+
+.modal-content {
+  background-color: beige;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Georgia", serif;
+}
+
+
+.close {
+  color: red;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: white;
+}
+
