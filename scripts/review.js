@@ -6,4 +6,4 @@ window.onload = function () {
     };;
  
  document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("last-modified").textContent = document.lastModified;
+    document.getElementById("lastModified").textContent = document.lastModified;
